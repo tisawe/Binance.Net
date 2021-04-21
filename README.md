@@ -150,8 +150,6 @@ if(!startResult.Success)
 var socketClient = new BinanceSocketClient();
 
 socketClient.Spot.SubscribeToUserDataUpdates(startResult.Data, 
-	accountUpdate => { // Handle account info update 
-	},
 	orderUpdate => { // Handle order update
 	}, 
 	ocoUpdate => { // Handle oco order update
@@ -169,6 +167,9 @@ When no longer listening to private endpoints the `StopUserStream` method in `Bi
 
 
 ## Release notes
+* Version 6.13.2 - 19 apr 2021
+    * Updated CryptoExchange.Net
+
 * Version 6.13.1 - 02 apr 2021
     * Fixed mining endpoints
     * Adjusted TransferSubAccountToSubAccount request
