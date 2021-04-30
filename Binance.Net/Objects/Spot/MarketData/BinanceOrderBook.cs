@@ -24,7 +24,12 @@ namespace Binance.Net.Objects.Spot.MarketData
         /// </summary>
         [JsonProperty("lastUpdateId")]
         public long LastUpdateId { get; set; }
-        
+
+        /// <summary>
+        /// Transaction time
+        /// </summary>
+        public DateTime TransactionTime { get; set; } = DateTime.UtcNow;
+
         /// <summary>
         /// The list of bids
         /// </summary>

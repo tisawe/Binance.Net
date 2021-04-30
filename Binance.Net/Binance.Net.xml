@@ -2552,6 +2552,11 @@
             The ID of the last update
             </summary>
         </member>
+        <member name="P:Binance.Net.Interfaces.IBinanceOrderBook.TransactionTime">
+            <summary>
+            Transaction time
+            </summary>
+        </member>
         <member name="P:Binance.Net.Interfaces.IBinanceOrderBook.Bids">
             <summary>
             The list of bids
@@ -3028,6 +3033,22 @@
             <summary>
             Futures socket client streams
             </summary>
+        </member>
+        <member name="M:Binance.Net.Interfaces.SocketSubClient.IBinanceSocketClientFutures.SubscribeToBookTickerUpdates(System.String,System.Action{Binance.Net.Interfaces.IBinanceBookPrice})">
+            <summary>
+            Subscribes to the book ticker update stream for the provided symbol
+            </summary>
+            <param name="symbol">The symbol</param>
+            <param name="onMessage">The event handler for the received data</param>
+            <returns>A stream subscription. This stream subscription can be used to be notified when the socket is disconnected/reconnected</returns>
+        </member>
+        <member name="M:Binance.Net.Interfaces.SocketSubClient.IBinanceSocketClientFutures.SubscribeToBookTickerUpdatesAsync(System.String,System.Action{Binance.Net.Interfaces.IBinanceBookPrice})">
+            <summary>
+            Subscribes to the book ticker update stream for the provided symbol
+            </summary>
+            <param name="symbol">The symbol</param>
+            <param name="onMessage">The event handler for the received data</param>
+            <returns>A stream subscription. This stream subscription can be used to be notified when the socket is disconnected/reconnected</returns>
         </member>
         <member name="M:Binance.Net.Interfaces.SocketSubClient.IBinanceSocketClientFutures.SubscribeToBookTickerUpdates(System.Collections.Generic.IEnumerable{System.String},System.Action{Binance.Net.Interfaces.IBinanceBookPrice})">
             <summary>
@@ -15592,6 +15613,11 @@
         <member name="P:Binance.Net.Objects.Spot.MarketData.BinanceOrderBook.LastUpdateId">
             <summary>
             The ID of the last update
+            </summary>
+        </member>
+        <member name="P:Binance.Net.Objects.Spot.MarketData.BinanceOrderBook.TransactionTime">
+            <summary>
+            Transaction time
             </summary>
         </member>
         <member name="P:Binance.Net.Objects.Spot.MarketData.BinanceOrderBook.Bids">

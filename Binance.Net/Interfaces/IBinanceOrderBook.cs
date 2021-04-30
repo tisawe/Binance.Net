@@ -20,6 +20,11 @@ namespace Binance.Net.Interfaces
         long LastUpdateId { get; set; }
 
         /// <summary>
+        /// Transaction time
+        /// </summary>
+        DateTime TransactionTime { get; set; }
+
+        /// <summary>
         /// The list of bids
         /// </summary>
         IEnumerable<BinanceOrderBookEntry> Bids { get; set; }
