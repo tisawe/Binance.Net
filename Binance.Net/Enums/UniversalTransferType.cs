@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Binance.Net.Enums
+﻿namespace Binance.Net.Enums
 {
     /// <summary>
     /// Universal transfer type
@@ -91,6 +87,15 @@ namespace Binance.Net.Enums
         MarginToC2C,
 
         /// <summary>
+        /// Isolated margin to margin
+        /// </summary>
+        IsolatedMarginToMargin,
+        /// <summary>
+        /// Margin to isolated margin
+        /// </summary>
+        MarginToIsolatedMargin,
+
+        /// <summary>
         /// Mining to Main (spot)
         /// </summary>
         MiningToMain,
@@ -105,6 +110,15 @@ namespace Binance.Net.Enums
         /// <summary>
         /// Mining to Margin
         /// </summary>
-        MiningToMargin
+        MiningToMargin,
+
+        /// <summary>
+        /// Main to pay
+        /// </summary>
+        MainToPay,
+        /// <summary>
+        /// Pay to main
+        /// </summary>
+        PayToMain        
     }
 }

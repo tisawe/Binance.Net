@@ -12,10 +12,11 @@ namespace Binance.Net.Objects.Spot.MarginData
         /// <summary>
         /// The asset
         /// </summary>
-        public string Asset { get; set; } = "";
+        public string Asset { get; set; } = string.Empty;
         /// <summary>
         /// The daily interest
         /// </summary>
+        [JsonProperty("dailyInterestRate")]
         public decimal DailyInterest { get; set; }
         /// <summary>
         /// Timestamp
@@ -25,6 +26,6 @@ namespace Binance.Net.Objects.Spot.MarginData
         /// <summary>
         /// Vip level
         /// </summary>
-        public string VipLevel { get; set; } = "";
+        public string VipLevel { get; set; } = string.Empty;
     }
 }
